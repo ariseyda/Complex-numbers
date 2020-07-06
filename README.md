@@ -8,4 +8,5 @@ Define a structure called complex that is used for complex numbers and following
 - a function to divide two complex variables. 
 - a function to subtract two complex variables. 
 - a function to multiply two complex variables. 
+- a function to add two complex variables.
 Test your functions in a program. 
