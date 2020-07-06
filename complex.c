@@ -11,6 +11,7 @@
 //- a function to divide two complex variables. Test your functions in a program.
 //- a function to subtract two complex variables. 
 //- a function to multiply two complex variables. 
+//- a function to add two complex variables.
 
 
 struct Complex{
@@ -34,10 +35,13 @@ void divide_mltp_minus_c(double rc,double ic){
 	double minus_i=(ic-i);
 	double mltp_r=(rc*r) - (ic*i);
 	double mltp_i=(rc*i) + (r*ic);
+	double add_r=(rc+r);
+	double add_i=(ic+i);
 	
 	printf("Divide: ((%.1f) + (%.1f i)) / ((%.1f) + (%.1f i)) = %.2f + (%.2f i) / %.1f",rc,ic,r,i,divide_r,divide_i,denom);
 	printf("\nMinus: ((%.1f) + (%.1f i)) - ((%.1f) + (%.1f i)) = %.2f + (%.2f i) ",rc,ic,r,i,minus_r,minus_i);
 	printf("\nMltp: ((%.1f) + (%.1f i)) * ((%.1f) + (%.1f i)) = %.2f + (%.2f i) ",rc,ic,r,i,mltp_r,mltp_i);
+	printf("\nMinus: ((%.1f) + (%.1f i)) + ((%.1f) + (%.1f i)) = %.2f + (%.2f i) ",rc,ic,r,i,add_r,add_i);
 	
 	
 }
